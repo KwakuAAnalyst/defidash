@@ -1,3 +1,55 @@
+# DeFi Dashboard
+A React-based DeFi dashboard that displays real-time token prices and protocol TVL (Total Value Locked) using Chainlink price feeds. The app interacts with Ethereum blockchain data via Web3 and Chainlink plugins.
+
+## Features
+
+- Displays real-time prices for multiple tokens (BTC, ETH, LINK, UNI, AAVE).
+- Shows TVL for popular DeFi protocols (Uniswap, Aave, Compound).
+- Refresh data on demand with a user-friendly interface.
+
+## Technologies Used
+
+- **React**: For building the user interface.
+- **Web3.js**: For interacting with Ethereum blockchain.
+- **Chainlink Plugin**: For fetching real-time price feeds.
+- **CSS**: For styling the application.
+
+## Prerequisites
+
+Before you start, ensure you have the following:
+
+- Node.js and npm installed. [Download Node.js](https://nodejs.org/)
+- A modern web browser with MetaMask or other Ethereum wallet extension installed.
+
+## Setup and Installation
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/yourusername/defi-dashboard.git
+   cd defi-dashboard
+
+# Usage
+
+Token Prices: Displays the current prices for BTC, ETH, LINK, UNI, and AAVE in USD.
+Protocol TVL: Displays estimated TVL values for Uniswap, Aave, and Compound. Note that this data is simulated and not fetched from real APIs in this version.
+
+# How It Works
+Web3.js Initialization: The app uses Web3.js to interact with the Ethereum blockchain.
+Chainlink Plugin: The ChainlinkPlugin is registered to fetch real-time price data.
+Data Fetching: On component mount and when the "Refresh Data" button is clicked, the app fetches token prices and protocol TVL.
+
+# Code Overview
+App.js: Main React component managing state and fetching data.
+
+tokenPrices: Stores real-time token prices.
+protocolTVL: Stores simulated protocol TVL values.
+fetchData(): Fetches both token prices and protocol TVL.
+getTokenPrices(): Fetches prices using Chainlink price feeds.
+getProtocolTVL(): Simulates fetching TVL data for demonstration.
+App.css: Contains styles for the app, including button styles and layout for the dashboard sections.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
