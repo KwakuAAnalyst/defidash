@@ -46,10 +46,15 @@ Data Fetching: On component mount and when the "Refresh Data" button is clicked,
 App.js: Main React component managing state and fetching data.
 
 tokenPrices: Stores real-time token prices.
+
 protocolTVL: Stores simulated protocol TVL values.
+
 fetchData(): Fetches both token prices and protocol TVL.
+
 getTokenPrices(): Fetches prices using Chainlink price feeds.
+
 getProtocolTVL(): Simulates fetching TVL data for demonstration.
+
 App.css: Contains styles for the app, including button styles and layout for the dashboard sections.
 
 
