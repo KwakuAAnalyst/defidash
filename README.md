@@ -32,11 +32,14 @@ Before you start, ensure you have the following:
 # Usage
 
 Token Prices: Displays the current prices for BTC, ETH, LINK, UNI, and AAVE in USD.
+
 Protocol TVL: Displays estimated TVL values for Uniswap, Aave, and Compound. Note that this data is simulated and not fetched from real APIs in this version.
 
 # How It Works
 Web3.js Initialization: The app uses Web3.js to interact with the Ethereum blockchain.
+
 Chainlink Plugin: The ChainlinkPlugin is registered to fetch real-time price data.
+
 Data Fetching: On component mount and when the "Refresh Data" button is clicked, the app fetches token prices and protocol TVL.
 
 # Code Overview
